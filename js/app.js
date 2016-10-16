@@ -1,6 +1,5 @@
-$(document).ready( function() {
+$(document).ready(function(){
 	var allergyChosen;
-
 	$('#searchButton').on('click', function (event) {	
 	    event.preventDefault();
 	    var keyword = $('#ingredient').val();
