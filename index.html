@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Global Recipes w/REstrcition Allergies</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="background-image"></div>
+	<div id="wrapper">
+		<header class="heading">
+			<h1>Global Recipes with REstriction Allergies Search Box</h1>
+			<p> This SUPREME food application has MANY things you that can MEET YOUR NEEDS. A recipe in mind, a specific cursines  If you have a recipe in mind, search directly by name leaving out the Cuisine dropdown menu. If you want to search recipes by cuisine, leave the field blank, choose a cuisine or a variety of each inputs and click on Search button.</p>
+			<p>Be shocked and enjoy a variety of recipes that meets your needs!!</p>
+		</header>
+		<div id="container">
+			<label>Allergies:</label>
+				<div id='row-results'>
+					<input type='checkbox' name='allergy' class='checkbox' value='396^Dairy-Free' />Dairy-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='397^Egg-Free' />Egg-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='393^Gluten-Free' />Gluten-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='394^Peanut-Free' />Peanut-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='398^Seafood-Free' />Seafood-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='399^Sesame-Free' />Sesame-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='400^Soy-Free' />Soy-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='401^Sulfite-Free' />Sulfite-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='395^Tree Nut-Free' />Tree Nut-Free
+					<input type='checkbox' name='allergy' class='checkbox' value='392^Wheat-Free"' />Wheat-Free
+				</div>
+			</div>
+		<section class="input-section">
+			<input id="ingredient" type="text" placeholder="Enter something...">
+			<select name="cuisines" id="cuisine-name">
+				<option disabled selected value="choose cuisine">Please choose a Cuisine</option>
+				<option value="african">African</option>
+				<option value="american">American</option>
+				<option value="asian">Asian</option>
+				<option value="barbecue">Barbecue</option>
+				<option value="brazilian">Brazilian</option>
+				<option value="british">British</option>	
+				<option value="cajun">Cajun and Creole</option>
+				<option value="chinese">Chinese</option>
+				<option value="cuban">Cuban</option>
+				<option value="english">English</option>
+				<option value="ethiopian">Ethiopian</option>
+				<option value="french">French</option>
+				<option value="hawaiian">Hawaiian</option>
+				<option value="hungarian">Hungarian</option>
+				<option value="german">German</option>
+				<option value="greek">Greek</option>
+				<option value="indian">Indian</option>
+				<option value="irish">Irish</option>
+				<option value="italian">Italian</option>
+				<option value="japanese">Japanese</option>
+				<option value="jamaican">Jamaican</option>
+				<option value="korean">Korean</option>
+				<option value="mediterranean">Mediterranean</option>
+				<option value="mexican">Mexican</option>
+				<option value="moroccan">Moroccan</option>
+				<option value="portugese">Portugese</option>
+				<option value="southern">Southern and Soul Food</option>
+				<option value="southwestern">Southwestern</option>
+				<option value="spanish">Spanish</option>
+				<option value="swedish">Swedish</option>
+				<option value="thai">Thai</option>
+				<option value="vietnamese">Vietnamese</option>
+			</select>
+			<button id="searchButton" class="search">Search</button>
+		</section>
+		<section class="recipe-list">
+			<ul class="recipe-details">
+			</ul>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
