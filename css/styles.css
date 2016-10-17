@@ -1,8 +1,7 @@
 html {
+	background: url(../images/food-background.jpg) no-repeat center center fixed; 
 	box-sizing: border-box;
 	display: inline-block;
-	background: url(../images/food-background.jpg) 
-	no-repeat center center fixed; 
 }
 
 body {
@@ -12,29 +11,27 @@ body {
 }
 
 .checkbox {
-	height: 30px;
-	width: 30px;
 	display: inline-block;
+	height: 30px;
 	margin: 10px auto;
-  	position: relative;
+	width: 30px;
   	border-radius: 40px;
+  	position: relative;
 }
 
 .heading h1 {
+	color: red;
 	font-size: 50px;
 	font-weight: bolder;
-	color: red;
-
 }
 
 .heading p {
-	font-weight: bolder;
 	color: black;
 	font-size: 28px;
-	padding-bottom: 1rem;
-	width: 90%;
+	font-weight: bolder;
 	margin: 0 auto;
-	line-height: 1.5rem;
+	padding-bottom: 20px;
+	width: 90%;
 }
 
 #container {
@@ -45,12 +42,60 @@ body {
 }
 
 #wrapper {
-	max-width: 62rem;
+	max-width: 61rem;
 	margin: 20px auto 50px auto;
-	background: ;
-	border-radius: 0.5px;
+	background: url("../images/1164418.png");
 }
 
+.input-section {
+	padding-bottom: 20px;
+	margin: 0 auto;
+	width: 52em;
+}
+
+.input-section #ingredient {
+	border-radius: 0.20rem;
+	border-color: black;
+	border-style: solid;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.25rem;
+	height: 1.5rem;
+	margin-right: 5%;	
+	padding: 0.10%;
+	width: 30%;
+}
+
+.input-section select {
+	font-size: 1.25rem;
+	font-family: "Times New Roman", Times, serif;
+	height: 1.8em;
+	width: 40%;
+	color: red;
+	font-weight: bolder;
+	padding: 0.15%;
+	margin-right: 2.5%;	
+	border-color: black;
+	border-style: solid;
+	border-radius: 0.30rem;
+}
+
+.input-section .search {
+	font-size: 1.35rem;
+	font-weight: bolder;
+	font-family: "Times New Roman", Times, serif;
+	height: 1.8rem;
+	width: 20%;
+	color: red;
+	padding: 0.15%;
+	border-radius: 0.35rem;
+	border-color: black;
+	border-style: solid;
+}
+
+.input-section .search:hover {
+	background-color: #ffcccc;
+	cursor: pointer;
+}
 
 
 
