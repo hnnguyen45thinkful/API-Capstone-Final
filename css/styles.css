@@ -133,7 +133,7 @@ body {
 
 .recipe-details a:hover {
 	cursor: pointer;
-	color: #F79F81;
+	color: red;
 }
 
 
