@@ -39,13 +39,8 @@ var getRecipe = function(keyword,cuisine,allergy) {
 	.done(function(result){
 		$('.recipe-details').html('');
 		$.each(result.matches, function(i, matches) {
-			var recipe = '<li><div class="recipe-image"><img src="' +
-							matches.imageUrlsBySize[90] + '" alt="Recipe image" width="170"></div><div class="recipe-description"><p>' +
-							matches.sourceDisplayName + '</p><p><a target="_blank" href=https://www.yummly.com/recipe/' +
-							matches.id + ' >' + matches.recipeName + '</a></p><p>Cooking time: ' + 
-							matches.totalTimeInSeconds/60 + ' minutes</p><p>Rating: ' + 
-							matches.rating + " out of 5" + '</p></div></li>';
-			$('.recipe-details').append(recipe);
+			var recipe = '<li style="background-image: url('+matches.imageUrlsBySize[90]+')"><div class="recipe-description"><p>' + '</p><p><a target="_blank" href=https://www.yummly.com/recipe/' + matches.id + ' >' + matches.recipeName + '</a></p><p>Cooking time: ' + matches.totalTimeInSeconds/60 + ' minutes</p><p>Rating: ' + matches.rating + " out of 5" + '</p></div></li>';
+            $('.recipe-details').append(recipe);
 		});
 	})
 	.fail(function(jqXHR, error, errorThrown){
