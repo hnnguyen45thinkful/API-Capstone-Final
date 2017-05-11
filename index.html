@@ -4,66 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Global Recipes w/Restriction Allergies</title>
+	<title>World Recipes</title>
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 </head>
-<body background="https://gfb.global.ssl.fastly.net/wp-content/uploads/2015/04/globalfoodbook_final8.png">
-	<div class="background-image"></div>
-	<div id="wrapper">
-		<header class="heading">
-			<h1>Global Recipes Search</h1>
-			<p> Find ANY Recipes to meet your Allegies Needs in different cuisine!!!!</p>
-		</header>
-		<div id="container">
-			<label>Choose your Allergies:</label>
-				<div id='row-results'>
-					<aside>
-					<input type='checkbox' name='allergy' class='checkbox' value='396^Dairy-Free' />
-					<img src= "http://i.imgur.com/sh30nFK.png" height="45" width="45" />
-					<label>Dairy-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='397^Egg-Free' />
-					<img src= "http://i.imgur.com/J6eU9Kx.png" height="40" width="40" />
-					<label>Egg-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='393^Gluten-Free' />
-					<img src= "http://i.imgur.com/JPcFrkp.png" height="40" width="40" />
-					<label>Gluten-Free</label>
-					</aside>
-					<aside>
-					<input type='checkbox' name='allergy' class='checkbox' value='394^Peanut-Free' />
-					<img src= "http://i.imgur.com/7RE0cSY.png" height="40" width="40" />
-					<label>Peanut-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='398^Seafood-Free'
-					/>
-					<img src= "http://i.imgur.com/kU1dgn7.png" height="40" width="40" />
-					<label>Seafood-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='399^Sesame-Free' />
-					<img src= "http://i.imgur.com/Tj8f7DD.png" height="40" width="40" />
-					<label>Sesame-Free</label>
-					</aside>
-					<aside>
-					<input type='checkbox' name='allergy' class='checkbox' value='400^Soy-Free' />
-					<img src= "http://i.imgur.com/rJdVkga.png" height="40" width="40" />
-					<label>Soy-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='401^Sulfite-Free' />
-					<img src= "http://i.imgur.com/ClmkPYK.png" height="40" width="40" />
-					<label>Sulfite-Free</label>
-					<input type='checkbox' name='allergy' class='checkbox' value='395^Tree Nut-Free' />
-					<img src= "http://i.imgur.com/BgnltZz.png" height="40" width="40" />
-					<label>Tree Nut-Free</label>
-					</aside>
-					<aside>
-					<input type='checkbox' name='allergy' class='checkbox' value='392^Wheat-Free' />
-					<img src= "http://i.imgur.com/q172zYn.png" height="40" width="40" />
-					<label>Wheat-Free</label>
-					</aside>
-				</div>
-			
-			</div>
-		<section class="input-section">
+<body>
+<header class="heading">
+			<h1>World Recipes</h1>
+			<section class="input-section">
 			<input id="ingredient" type="text" placeholder="Ingredient(s)...">
 			<select name="cuisines" id="cuisine-name">
 				<option disabled selected value="choose cuisine">Please choose a Cuisine</option>
@@ -101,6 +52,45 @@
 			</select>
 			<button id="searchButton" class="search">Search</button>
 		</section>
+		</header>	
+		<div id="wrapper">
+		<div id="container">
+				<div id='row-results'>
+					<input type='checkbox' name='allergy' class='checkbox' value='396^Dairy-Free' />
+					<img src= "http://i.imgur.com/sh30nFK.png" height="45" width="45" />
+					<label>Dairy-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='397^Egg-Free' />
+					<img src= "http://i.imgur.com/J6eU9Kx.png" height="40" width="40" />
+					<label>Egg-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='393^Gluten-Free' />
+					<img src= "http://i.imgur.com/JPcFrkp.png" height="40" width="40" />
+					<label>Gluten-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='394^Peanut-Free' />
+					<img src= "http://i.imgur.com/7RE0cSY.png" height="40" width="40" />
+					<label>Peanut-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='398^Seafood-Free'
+					/>
+					<img src= "http://i.imgur.com/kU1dgn7.png" height="40" width="40" />
+					<label>Seafood-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='399^Sesame-Free' />
+					<img src= "http://i.imgur.com/Tj8f7DD.png" height="40" width="40" />
+					<label>Sesame-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='400^Soy-Free' />
+					<img src= "http://i.imgur.com/rJdVkga.png" height="40" width="40" />
+					<label>Soy-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='401^Sulfite-Free' />
+					<img src= "http://i.imgur.com/ClmkPYK.png" height="40" width="40" />
+					<label>Sulfite-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='395^Tree Nut-Free' />
+					<img src= "http://i.imgur.com/BgnltZz.png" height="40" width="40" />
+					<label>Tree Nut-Free</label>
+					<input type='checkbox' name='allergy' class='checkbox' value='392^Wheat-Free' />
+					<img src= "http://i.imgur.com/q172zYn.png" height="40" width="40" />
+					<label>Wheat-Free</label>
+				</div>
+			
+			</div>
+		
 		<section class="recipe-list">
 			<ul class="recipe-details">
 			</ul>
