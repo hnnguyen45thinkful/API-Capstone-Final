@@ -1,16 +1,20 @@
 $(document).ready(function(){
 	var allergyChosen;
+
+	$('.allergy').on('click',function(){
+		$(this).toggleClass('highlight');
+	});
 	$('#searchButton').on('click', function (event) {	
 	    event.preventDefault();
 	    var keyword = $('#ingredient').val();
 	    var cuisine = $('#cuisine-name').val();
-	    $("input[type='checkbox']:checked").each(function(i,allergy){
-	    	allergyChosen += "&allowedAllergy[]=" + $(allergy).val();	    
+	    $(".allergy.highlight").each(function(i,allergy){
+	    	allergyChosen += "&allowedAllergy[]=" + $(allergy).attr('id');	    
 	    });
 	    recipeValidation(keyword,cuisine,allergyChosen);
 	});
 });
-
+//$('.filter').click(function(){ $(this).toggleClass('highlight'); });
 
 
 var recipeValidation = function(keyword,cuisine,allergy) {
