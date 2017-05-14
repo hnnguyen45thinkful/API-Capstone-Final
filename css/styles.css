@@ -3,6 +3,9 @@
 body {
 	background-size: 100;
     background-repeat: repeat;
+   	font-family: sans-serif;
+	margin: 0 auto;
+	text-align: center;
 }
 
 html {
@@ -12,11 +15,7 @@ html {
 	background-position: center bottom;
 }
 
-body {
-	font-family: sans-serif;
-	margin: 0 auto;
-	text-align: center;
-}
+
 
 .heading h1 {
     color: black;
@@ -26,7 +25,7 @@ body {
 }
 
 header.heading {
-	background-color: red;
+	background-color: #E8724A;
 	padding: 25px 25px 10px;
 	text-align: left;
 	color: white;
@@ -70,7 +69,7 @@ header.heading {
 
 #wrapper {
 	width: 945px;
-	margin: 20px auto 50px auto;
+	margin: 20px 50px 50px 170px;
 	background-color: rgba(255,255,255,0.8);
 }
 
@@ -167,7 +166,8 @@ header.heading {
     display: block;
 	line-height: 30px;
     right: 10px;
-    top: 10px;
+    top: -20px;
+    left: 10px;
 }
 
 .recipe-list {
@@ -176,17 +176,19 @@ header.heading {
 	font-size: 15px;
 	font-style: bolder;
 	padding: 32px, 32px, 32px, 32px;
+	border
 }
 
 .recipe-details li {
-	border-radius: 25px;
+	/*border-radius: 25px;*/
 	border: 1px solid black;
 	display: inline-block;
+	margin-top: 2%;
 	margin-bottom: 4%;
 	margin-left: 4%;
 	margin-right: 4%;
-	height: 220px;
-	width: 40%;
+	height: 240px;
+	width: 25%;
 	text-align: center;
 	background-color: grey;
 	background-repeat: no-repeat;
@@ -203,15 +205,15 @@ header.heading {
 }
 
 .recipe-details a {
-	font-size: 20px;
+	font-size: 15px;
 	color: black;
-	font-weight: bolder;
+	font-weight: none;
 	margin: 0 auto;
 }
 
 .recipe-details p {
-	margin: 0px;
-	font-size: 18px;
+	margin: 0 auto;
+	font-size: 15px;
 	text-align: center;
 	max-width: : 50%;
 }
@@ -225,7 +227,7 @@ header.heading {
 	position: absolute;
 	bottom: 0px;
 	background-color: rgba(255,255,255,0.8);
-	border-radius: 0px 0px 25px 25px;
+	/*border-radius: 0px 0px 25px 25px;*/
 	padding: 10px 0px;
 }
 
