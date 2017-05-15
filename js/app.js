@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	var allergyChosen;
+$(document).ready(function(){     var allergyChosen;
 
 	$('.allergy').on('click',function(){
 		$(this).toggleClass('highlight');
@@ -43,7 +42,7 @@ var getRecipe = function(keyword,cuisine,allergy) {
 	.done(function(result){
 		$('.recipe-details').html('');
 		$.each(result.matches, function(i, matches) {
-			var recipe = '<li style="background-image: url('+matches.imageUrlsBySize[90]+')"><div class="recipe-description"><p>' + '</p><p><a target="_blank" href=https://www.yummly.com/recipe/' + matches.id + ' >' + matches.recipeName + '</a></p><p>Cooking time: ' + matches.totalTimeInSeconds/60 + ' minutes</p><p>Rating: ' + matches.rating + " out of 5" + "<br>Publisher: " + matches.sourceDisplayName +  "<br> Servings: " + matches.numberOfServings + '</p></div></li>';
+			var recipe = '<li style="background-image: url('+matches.imageUrlsBySize[90]+')"><div class="recipe-description"><p>' + '</p><p><a target="_blank" href=https://www.yummly.com/recipe/' + matches.id + ' >' + matches.recipeName + '</a></p><p>Cooking time: ' + matches.totalTimeInSeconds/60 + ' minutes</p><p>Rating: ' + matches.rating + " out of 5" + "<br>By: " + matches.sourceDisplayName +  "<br> Servings: " + matches.yield + '</p></div></li>';
             $('.recipe-details').append(recipe);
 		});
 	})

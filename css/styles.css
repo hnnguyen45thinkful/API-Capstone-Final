@@ -15,7 +15,21 @@ html {
 	background-position: center bottom;
 }
 
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
 
+ul.recipe-details {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+}
 
 .heading h1 {
     color: black;
@@ -66,6 +80,11 @@ header.heading {
 	background-color: orange;
 }
 
+#rating{
+	position: absolute; 
+	right: 0px; 
+	top: 0px;
+}
 
 #wrapper {
 	width: 945px;
@@ -187,7 +206,7 @@ header.heading {
 	margin-bottom: 4%;
 	margin-left: 4%;
 	margin-right: 4%;
-	height: 240px;
+	height: 250px;
 	width: 25%;
 	text-align: center;
 	background-color: grey;
