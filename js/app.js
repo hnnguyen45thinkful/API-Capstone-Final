@@ -40,9 +40,27 @@ var getRecipe = function(keyword,cuisine,allergy) {
 		type: "GET"
 		})
 	.done(function(result){
+		console.log(result.matches[0]);
 		$('.recipe-details').html('');
 		$.each(result.matches, function(i, matches) {
-			var recipe = '<li style="background-image: url('+matches.imageUrlsBySize[90]+')"><div class="recipe-description"><p>' + '</p><p><a target="_blank" href=https://www.yummly.com/recipe/' + matches.id + ' >' + matches.recipeName + '</a></p><p>Cooking time: ' + matches.totalTimeInSeconds/60 + ' minutes</p><p>Rating: ' + matches.rating + " out of 5" + "<br>By: " + matches.sourceDisplayName +  "<br> Servings: " + matches.yield + '</p></div></li>';
+			var recipe = (
+    `<li style="background-image: url(${matches.imageUrlsBySize[90].replace("s90-c","s200-c")})"> 
+<div class="recipe-description">
+    <div class="recipeName">
+                <h2 id="recipeName">  
+        <a target="_blank" href="https://www.yummly.com/recipe/" + ${matches.id}>
+        ${matches.recipeName}
+        </a>
+        </h2>
+        <div class="author">By: ${matches.sourceDisplayName} </div>
+        <p class="rate">Rating: ${matches.rating}/5 </p>
+       <div class="time">
+         <img src="http://i.imgur.com/00aeNTk.png" height = "25" width = "25"><span id=cookTime>Time: ${matches.totalTimeInSeconds/60} minutes</span>
+        </div>
+    </div>
+</li>`
+);
+
             $('.recipe-details').append(recipe);
 		});
 	})
@@ -61,3 +79,4 @@ var getRecipe = function(keyword,cuisine,allergy) {
 
 
 
+//Create a div classes only, applyi margin top and bottom
