@@ -1,42 +1,139 @@
 /*Created and modified by Hieu Nguyen*/
+
+body {
+	background-size: 100;
+    background-repeat: repeat;
+   	font-family: sans-serif;
+	margin: 0 auto;
+	text-align: center;
+}
+
 html {
-	background: url(../images/food-background.jpg) no-repeat center center fixed; 
+	/*background: url(../images/food-background.jpg) no-repeat center center fixed;*/ 
 	box-sizing: border-box;
 	display: inline-block;
 	background-position: center bottom;
 }
 
-body {
-	font-family: sans-serif;
-	margin: 0 auto;
-	text-align: center;
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+ul.recipe-details {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.heading h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+header.heading {
+	background-color: #E8724A;
+	padding: 25px 25px 10px;
+	text-align: left;
+	color: white;
 }
 
 #container {
 	font-family: sans-serif;
 	font-size: 29px;
 	font-weight: bold;
-	padding: 20px 20px 20px 20px;
+	/*padding: 20px 20px 20px 20px;*/
 }
 
 #row-results {
 	font-size: 26px;
+	margin: 30px auto;
+}
+
+#row-results img{
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+	padding: 5px 5px 6px 5px;
+	position: relative;
+	top: 14px;
+	font-size: 26px;
+}
+
+#row-results label {
+	border: 1px solid black;
+	padding: 10px 20px;
+	display: inline-block;
+	margin: 5px 10px 5px -8px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.allergy.highlight {
+	background-color: orange;
+}
+
+#rating{
+	position: absolute; 
+	right: 0px; 
+	top: 0px;
 }
 
 #wrapper {
 	width: 945px;
-	margin: 20px auto 50px auto;
+	margin: 20px 50px 50px 170px;
 	background-color: rgba(255,255,255,0.8);
 }
 
 
-.checkbox {
+/*.checkbox {
 	display: inline-block;
 	height: 30px;
 	margin: 10px auto;
 	width: 30px;
   	border-radius: 40px;
   	position: relative; 	
+}*/
+
+p.rate {
+	position: absolute;
+	right: 0px;
+	/* top: -20px; */
+	background-color:#F2C757;
+	padding: 5px;
+	bottom: 0px;
+}
+
+h2.a {
+	text-decoration: none;
+}
+
+.author {
+	/* margin-right: -45px; */
+	font-size: 15px;
+	font-style: italic;
+	/* right: 120px; */
+	/* position: absolute; */
+	/* text-align: left; */
+}
+
+#recipeName {
+	text-align: left;
+	margin: 10px 0px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+p.cookTime {
+	text-align: left;
+	margin-top: 20px;
 }
 
 .heading h1 {
@@ -46,6 +143,14 @@ body {
 	margin-bottom: 20px;
 }
 
+/*
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 25%;
+    font-size: smaller;
+}
+*/
 .heading p {
 	color: black;
 	font-size: 28px;
@@ -62,15 +167,20 @@ body {
 }
 
 .input-section #ingredient {
-	border-radius: 3.2px;
+	border-radius: 3px;
 	border-color: black;
 	border-style: solid;
 	font-family: sans-serif;
-	font-size: 19px;
-	height: 24px;
-	margin-right: 5%;	
-	padding: 0.10%;
-	width: 30%;
+	font-size: 25px;
+	height: 30px;
+	margin-right: 60%;
+	margin-bottom: 25px;
+	padding: 0.1%;
+	width: 500px;
+	text-align: center;
+	position: absolute;
+	right: -275px;
+	top: 25px;
 }
 
 .input-section select {
@@ -81,24 +191,36 @@ body {
 	font-family: sans-serif;
 	font-size: 17.5px;
 	font-weight: bolder;
-	height: 28px;
-	margin-right: 5%;
+	height: 40px;
+	margin-right: 0%;
 	margin-left: 0.15%;	
-	padding: 0.1%;
-	width: 28%;
+	margin-bottom: 25px;
+	padding: 0.15%;
+	width: 25%;
+	text-align: center;
+	position: absolute;
+    right: 90px;
+    top: 22px;
 }
 
-.input-section .search {
+.search {
 	border-color: black;
-	border-radius: 5.6px;
+	border-radius: 10px;
 	border-style: solid;
 	color: black;
 	font-family: sans-serif;
 	font-size: 21.6px;
 	font-weight: bolder;
-	height: 28.8px;
+	height: 50px;
 	padding: 0.15%;
-	width: 20%;
+	width: 50%;
+	position: relative;
+    margin: 0 auto;
+    display: block;
+	line-height: 30px;
+    right: 10px;
+    top: -20px;
+    left: 10px;
 }
 
 .recipe-list {
@@ -107,17 +229,19 @@ body {
 	font-size: 15px;
 	font-style: bolder;
 	padding: 32px, 32px, 32px, 32px;
+	border
 }
 
 .recipe-details li {
-	border-radius: 25px;
+	/* border-radius: 20px; */
 	border: 1px solid black;
 	display: inline-block;
-	margin-bottom: 4%;
+	margin-top: 40px;
+	margin-bottom: 120px;
 	margin-left: 4%;
 	margin-right: 4%;
-	height: 220px;
-	width: 40%;
+	height: 250px;
+	width: 25%;
 	text-align: center;
 	background-color: grey;
 	background-repeat: no-repeat;
@@ -134,33 +258,45 @@ body {
 }
 
 .recipe-details a {
+		text-decoration: none;
 	font-size: 20px;
-	color: black;
-	font-weight: bolder;
+	color: grey;
+	font-weight: none;
 	margin: 0 auto;
+	max-width: 40%
 }
 
 .recipe-details p {
-	margin: 0px;
-	font-size: 18px;
+	margin: 0 auto;
+	font-size: 20px;
 	text-align: center;
-	max-width: : 50%;
+	/* max-width: 70%; */
+	/* padding: 5px; */
+	/* right: 0px; */
+	/* bottom: 0px; */
 }
 
 .recipe-description {
 	width: 100%;
 	color: black;
 	font-weight: bolder;
-	font-size: 18px;
-	text-align: center;
+	font-size: 25px;
+	text-align: left;
 	position: absolute;
 	bottom: 0px;
 	background-color: rgba(255,255,255,0.8);
-	border-radius: 0px 0px 25px 25px;
-	padding: 10px 0px;
+	height: 0px;
+	font-color:#E8724A;
+	/*border-radius: 0px 0px 25px 25px;*/
+	/*padding: 10px 0px;*/
 }
 
-
+.time {
+	/* margin: 32px 10px 10px 165px; */
+	font-size: 70%;
+	font-weight: normal;
+	margin-top: 5px;
+}
 @media only screen and (max-width: 1024px) {
 	#row-results {
 	font-size: 28px;
@@ -283,3 +419,7 @@ body {
 		width: 90%;
 	}
 }
+
+/*delete all positions with left right top bottom
+use inline-block for all Li's
+border radius applies.*/
